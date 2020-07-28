@@ -1,21 +1,25 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <anchored-heading :level="1">Привет, мир!</anchored-heading>
   </div>
 </template>
-
-
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+Vue.component('anchored-heading', {
+  render: function (createElement) {
+    return createElement(
+      'h' + this.level,   // имя тега
+      this.$slots.default // массив дочерних элементов
+    )
+  },
+  props: {
+    level: {
+      type: Number,
+      required: true
+    }
   }
-}
+})
+  
 </script>
 
 <style>

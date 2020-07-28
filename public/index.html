@@ -1,17 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html>
+
+<head>
+  <title>tets</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="JS.js" async></script>
+
+</head>
+</script>
+
+<body class="body">
+
+  <div class="main">
+    <div id="app6">
+      <button @click="show('hm1')">hm1</button>
+      <button @click="show('hm2')">hm2</button>
+      <button @click="show('hm3')">hm3</button>
+      <template v-if="loc==='hm1'">template1</template>
+      <template v-else-if="loc==='hm2'">template2</template>
+      <template v-else-if="loc==='hm3'">template3</template>
+    </div>
+
+    <div class="head">
+      <div id="link" class="links">
+        <div> <button v-on:click="visible=!visible">Главная</button> </div>
+        <div> <button>glav</button> </div>
+        <div> <button v-on:click="visible=!visible">Тесты</button> </div>
+        <div style="margin-left:auto"> <button>Войти</button> </div>
+      </div>
+    </div>
+    <div class="glavn">
+      <p>TEXT</p>
+      <div id="app5">text
+
+        <img :src="image" />
+      </div>
+
+      <br>
+      <hr>
+      <br>
+    </div>
+    <div id="app4">
+      <div class="test" v-show="visible">
+        <div class="panel">
+          <div class buttons>
+            <input type="button" value="Экспорт БТЗ" onclick="start()">
+            <input type="button" value="Импорт БТЗ">
+            <input type="button" value="Удалить БТЗ">
+            <input type="button" value="Импорт результатов анализа">
+          </div>
+
+          <div class="table_btz">
+            <table id="tab" class="view_test" border="1">
+              <tr>
+                <td>Наименование БТЗ</td>
+                <td>Дата загрузки</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz1</td>
+                <td>date1</td>
+              </tr>
+              <tr>
+                <td>btz2</td>
+                <td>date2</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+              <tr>
+                <td>btz3</td>
+                <td>date3</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="view_result">
+          <div id="databinding">
+            <div id="counter-event-example">
+              <p style="font-size:25px;">Language displayed : <b>{{ languageclicked }}</b></p>
+              <button-counter v-for="(item, index) in languages" v-bind:item="item" v-bind:index="index"
+                v-on:showlanguage="languagedisp"></button-counter>
+            </div>
+          </div>
+
+          <div id="app">
+            <form v-on:submit.prevent="addNew">
+              <label for="app" add-new>addNew</label>
+              <input v-model="newText" id="new-todo" placeholder="Текст">
+              <button>add</button>
+            </form>
+            <div is="todo-item" v-for="(todo,index) in todos" v-bind:key="todo.id" v-bind:title="todo.title"
+              v-on:remove=" todos.splice(index,1)">
+            </div>
+          </div>
+        </div>
+
+
+        <div id="app1">
+          <input v-model="company_name" v-on:input="setName" placeholder="company_name">
+          <input v-model="telephone_number" v-on:input="setNumber" placeholder="telephone_number">
+          <input v-model="address" v-on:input="setAddress" placeholder="address">
+          <input v-model="email" v-on:input="setEmail" placeholder="email">
+          <input v-model="headcompany" v-on:input="setHead" placeholder="headcompany">
+          <button v-on:click="send">Send</button>
+        </div>
+        <table id="cli" border="1">
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>a</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</body>
+
 </html>
